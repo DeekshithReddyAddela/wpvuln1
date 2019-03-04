@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="center-text">
+
+  <h2>Enter Base URL</h2>
+
+  <form action = "/vulnfile/" method = "POST" enctype = "multipart/form-data">
+    <input type = "text" name = "url" />
+    <input type = "submit"/>
+  </form>
+
+</div>
+
+{% endblock %}

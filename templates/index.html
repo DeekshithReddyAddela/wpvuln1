@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1>WPVuln</h1>
+
+<div class="center-text">
+  <b><p><a href={{ url_for('urlsfile') }}>URLs File</a> |
+  <a href={{ url_for('url') }}>URL</a> |
+  <a href="https://github.com/DeekshithReddyAddela/WPVuln">Code</a></p></b>
+</div>
+
+<div class='round-img'>
+  <img src={{ url_for('static', filename="imgs/wpvuln.png")}} width="250px">
+</div>
+
+{% endblock %}

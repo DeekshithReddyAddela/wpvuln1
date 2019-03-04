@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href={{ url_for('static', filename="css/style.css") }}>
+
+
+    <title>WPVuln</title>
+
+  </head>
+
+  <body>
+    <div class="navlinks">
+      <b><p>
+        <a href={{ url_for('index') }}>Home</a> |
+        <a href={{ url_for('links') }}>Links</a> |
+        <a href={{ url_for('about') }}>About</a>
+      </p></b>
+    </div>
+
+  	{% block content %}{% endblock %}
+
+    <div id="footer">
+    <p style="font-size:0.8em; position: absolute;
+    right: 0;bottom: 0;left: 0;
+    text-align: center;">Copyright © 2019</p>
+    </div>
+
+  </body>
+
+</html>
